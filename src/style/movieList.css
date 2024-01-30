@@ -1,0 +1,105 @@
+/* .slick-slide .slick-cloned {
+    display: none;
+} */
+  
+.slick-slider .slick-list .slick-slide .slick-active .slick-current{
+    height: 800px !important;   
+}
+/* Your styles for slick-slide elements here */
+.slick-slide {
+    display: none;
+}
+.slick-active {
+    display: block;
+}
+/* Override styles for slick-list */
+.slick-slider .slick-list {
+    
+    /* Your custom styles here */
+    width: 100%;
+    height: 800px !important;
+    background-color: #fff; /* Example background color */
+}
+
+/* Hide box and border for slick-dots-vertical */
+.slick-slider .slick-dots-vertical {
+    list-style: none; /* Remove default list styling */
+    padding: 0;
+    text-align: right;
+}
+
+.slick-slider .slick-dots-vertical li {
+    display: inline-block;
+    margin-right: 13px;
+}
+
+/* Style for the dot count */
+.slick-slider .slick-dots-vertical li button {
+    width: 20px; /* Adjust the width as needed */
+    height: 20px; /* Adjust the height as needed */
+    border: none; /* Remove the border */
+    border-radius: 50%; /* Optional: Makes the dots circular */
+    background-color: #333; /* Set the background color */
+    color: #fff; /* Set the text color */
+    font-size: 12px; /* Adjust the font size as needed */
+    line-height: 20px; /* Adjust the line height as needed */
+    margin: 0 5px; /* Optional: Add some spacing between dots */
+    background: border-box;
+}
+
+/* Adjust the positioning of slick-dots-vertical */
+.slick-slider {
+    position: relative;
+}
+
+.slick-slider .slick-dots-vertical {
+    list-style: none;
+    padding: 0;
+    text-align: right;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px; /* Adjust the distance from the right side */
+    
+}
+
+.slick-slider .slick-dots-vertical li {
+    display: block;
+    margin-bottom: 5px; /* Optional: Add some vertical spacing between dots */
+}
+
+.slick-slider .slick-dots-vertical li button {
+    width: 20px;
+    height: 20px;
+    border: none;
+    border-radius: 50%;
+    background-color: #333;
+    color: #fff;
+    font-size: 12px;
+    line-height: 20px;
+    background: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh; /* Set minimum height to 100% of the viewport height */
+    display: flex;
+    flex-direction: column;
+    overflow-y: none;
+    scrollbar-width: none;
+
+}
+/* styles.css (or any other global stylesheet) */
+
+  
+  /* Hide the vertical scrollbar but keep the space for it */
+  body::-webkit-scrollbar {
+    width: 0;
+  }
+
+.your-content {
+    flex: 1; /* Grow and take available space */
+}
+
+/* Other styles for your content */
